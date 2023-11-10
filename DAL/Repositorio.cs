@@ -10,12 +10,12 @@ namespace DAL
 {
     public class Repositorio
     {
-     
+
         public interface IUsuarioRepository
         {
             Usuario ObtenerPorId(int id);
             List<Usuario> ObtenerTodos();
-            void Guardar (Usuario usuario);
+            void Guardar(Usuario usuario);
         }
         public class UsuarioRepository : IUsuarioRepository
         {
@@ -23,9 +23,9 @@ namespace DAL
 
             public void Guardar(Usuario usuario)
             {
-                if (!ObtenerTodos().Any(u=> u.Identificacion==usuario.Identificacion))
+                if (!ObtenerTodos().Any(u => u.Identificacion == usuario.Identificacion))
                 {
-                    using (StreamWriter writer = new StreamWriter(usuarioFilePath,true))
+                    using (StreamWriter writer = new StreamWriter(usuarioFilePath, true))
                     {
                         string line = $"{usuario.Id},{usuario.NombreCompleto},{usuario.Identificacion},{usuario.EsCandidato}";
                     }
@@ -38,14 +38,14 @@ namespace DAL
 
             public Usuario ObtenerPorId(int id)
             {
-                return ObtenerTodos().FirstOrDefault(u=> u.Id == id);
+                return ObtenerTodos().FirstOrDefault(u => u.Id == id);
             }
             public List<Usuario> ObtenerTodos()
             {
                 List<Usuario> usuarios = new List<Usuario>();
                 if (File.Exists(usuarioFilePath))
                 {
-                    using (StreamReader reader = new StreamReader(usuarioFilePath)) 
+                    using (StreamReader reader = new StreamReader(usuarioFilePath))
                     {
                         string line;
                         while ((line = reader.ReadLine()) != null)
@@ -79,15 +79,15 @@ namespace DAL
         {
             Eleccion ObtenerPorId(int id);
             List<Eleccion> ObtenerTodas();
-            void Guardar (Eleccion eleccion);
+            void Guardar(Eleccion eleccion);
         }
 
         public class EleccionRespository : IEleccionRepository
         {
             private string eleccionesFilePath = "Elecciones.txt";
-            public Eleccion ObtenerPorId (int id)
+            public Eleccion ObtenerPorId(int id)
             {
-                return ObtenerTodas().FirstOrDefault(e=>e.Id == id);
+                return ObtenerTodas().FirstOrDefault(e => e.Id == id);
             }
             public List<Eleccion> ObtenerTodas()
             {
@@ -119,14 +119,14 @@ namespace DAL
                 }
                 return elecciones;
             }
-            public void Guardar (Eleccion eleccion)
+            public void Guardar(Eleccion eleccion)
             {
-                if (!ObtenerTodas().Any(e=> e.Nombre == eleccion.Nombre))
+                if (!ObtenerTodas().Any(e => e.Nombre == eleccion.Nombre))
                 {
-                    using (StreamWriter writer = new StreamWriter(eleccionesFilePath,true))
+                    using (StreamWriter writer = new StreamWriter(eleccionesFilePath, true))
                     {
                         string line = $"{eleccion.Id}, {eleccion.Nombre}, {eleccion.Fecha:yyyy-MM-dd}";
-                        writer .WriteLine(line);
+                        writer.WriteLine(line);
                     }
                 }
                 else
@@ -136,5 +136,34 @@ namespace DAL
             }
         }
 
+        public interface ICandidatoRepository
+        {
+            Candidato ObtenerPorId(int id);
+            List<Candidato> ObtenerTodos();
+            void Guardar (Candidato candidato);
+        }
+        public class CandidatoRepository : ICandidatoRepository 
+        {
+            private string candidatosFilePath = "Candidatos.txt";
+            public Candidato ObtenerPorId(int id)
+            {
+                return ObtenerTodos().FirstOrDefault(c=> c.Id == id);
+            }
+            public List<Candidato> ObtenerTodos()
+            {
+                List<Candidato>  candidatos = new List<Candidato>();
+                if(File.Exists(candidatosFilePath))
+                {
+                    using (StreamReader reader = new StreamReader(candidatosFilePath))
+                    {
+                        string line;
+                        while ((line = reader.ReadLine()) != null)
+                        {
+                            string[] campos = line.Split(',');
+                        }
+                    }
+                }
+            }
+        }
     }
 }

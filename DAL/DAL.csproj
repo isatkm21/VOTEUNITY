@@ -43,13 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CandidatoService.cs" />
-    <Compile Include="EleccionService.cs" />
-    <Compile Include="ResultadoElecciónService.cs" />
-    <Compile Include="UsuarioService.cs" />
-    <Compile Include="Votacion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VotoService.cs" />
+    <Compile Include="Repositorio.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

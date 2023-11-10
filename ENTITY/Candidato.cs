@@ -10,7 +10,6 @@ namespace ENTITY
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
-        public string PartidoPolitico { get; set; }
         public string PoliticoAsociado { get; set; }
 
     }
