@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ENTITY;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -9,13 +10,7 @@ namespace DAL
 {
     public class Repositorio
     {
-        public class Usuario
-        {
-            public int Id { get; set; }
-            public string NombreCompleto { get; set; }
-            public string Identificacion { get; set; }
-            public bool Escandidato { get; set; }
-        }
+     
         public interface IUsuarioRepository
         {
             Usuario ObtenerPorId(int id);
@@ -32,7 +27,7 @@ namespace DAL
                 {
                     using (StreamWriter writer = new StreamWriter(usuarioFilePath,true))
                     {
-                        string line = $"{usuario.Id},{usuario.NombreCompleto},{usuario.Identificacion},{usuario.Escandidato}";
+                        string line = $"{usuario.Id},{usuario.NombreCompleto},{usuario.Identificacion},{usuario.EsCandidato}";
                     }
                 }
                 else
@@ -69,7 +64,7 @@ namespace DAL
                                     Id = Id,
                                     NombreCompleto = NombreCompleto,
                                     Identificacion = Identificacion,
-                                    Escandidato = EsCandidato
+                                    EsCandidato = EsCandidato
                                 };
                                 usuarios.Add(usuario);
                             }
@@ -79,5 +74,67 @@ namespace DAL
                 return usuarios;
             }
         }
+
+        public interface IEleccionRepository
+        {
+            Eleccion ObtenerPorId(int id);
+            List<Eleccion> ObtenerTodas();
+            void Guardar (Eleccion eleccion);
+        }
+
+        public class EleccionRespository : IEleccionRepository
+        {
+            private string eleccionesFilePath = "Elecciones.txt";
+            public Eleccion ObtenerPorId (int id)
+            {
+                return ObtenerTodas().FirstOrDefault(e=>e.Id == id);
+            }
+            public List<Eleccion> ObtenerTodas()
+            {
+                List<Eleccion> elecciones = new List<Eleccion>();
+                if (File.Exists(eleccionesFilePath))
+                {
+                    using (StreamReader reader = new StreamReader(eleccionesFilePath))
+                    {
+                        string line;
+                        while ((line = reader.ReadLine()) != null)
+                        {
+                            string[] campos = line.Split(',');
+                            if (campos.Length == 3)
+                            {
+                                int Id = int.Parse(campos[0]);
+                                string Nombre = campos[1];
+                                DateTime Fecha = DateTime.Parse(campos[2]);
+
+                                Eleccion eleccion = new Eleccion
+                                {
+                                    Id = Id,
+                                    Nombre = Nombre,
+                                    Fecha = Fecha,
+                                };
+                                elecciones.Add(eleccion);
+                            }
+                        }
+                    }
+                }
+                return elecciones;
+            }
+            public void Guardar (Eleccion eleccion)
+            {
+                if (!ObtenerTodas().Any(e=> e.Nombre == eleccion.Nombre))
+                {
+                    using (StreamWriter writer = new StreamWriter(eleccionesFilePath,true))
+                    {
+                        string line = $"{eleccion.Id}, {eleccion.Nombre}, {eleccion.Fecha:yyyy-MM-dd}";
+                        writer .WriteLine(line);
+                    }
+                }
+                else
+                {
+                    throw new Exception("Ya esixte una eleccion con los mismos datos");
+                }
+            }
+        }
+
     }
 }
