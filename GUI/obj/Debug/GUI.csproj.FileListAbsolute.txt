@@ -1,0 +1,8 @@
+C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Segundo corte\VOTEUNITY\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Segundo corte\VOTEUNITY\GUI\obj\Debug\GUI.InfoCandidato.resources
+C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Segundo corte\VOTEUNITY\GUI\obj\Debug\GUI.Loguin.resources
+C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Segundo corte\VOTEUNITY\GUI\obj\Debug\GUI.NuevoUsuario.resources
+C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Segundo corte\VOTEUNITY\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Segundo corte\VOTEUNITY\GUI\obj\Debug\GUI.Votacion.resources
+C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Segundo corte\VOTEUNITY\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Segundo corte\VOTEUNITY\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
