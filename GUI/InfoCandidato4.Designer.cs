@@ -71,27 +71,37 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.richTextBox1.Font = new System.Drawing.Font("Nirmala UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.Transparent;
             this.richTextBox1.Location = new System.Drawing.Point(290, 5);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(392, 213);
             this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // richTextBox2
             // 
+            this.richTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.richTextBox2.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox2.ForeColor = System.Drawing.Color.Transparent;
             this.richTextBox2.Location = new System.Drawing.Point(5, 226);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(277, 124);
             this.richTextBox2.TabIndex = 2;
-            this.richTextBox2.Text = "";
+            this.richTextBox2.Text = "             Datos personales\nNombre: Gustavo Petro\nEdad: 61 Años\nProfesión: Econ" +
+    "omista\nUniversidad: Universidad Externado de Colombia";
             // 
             // richTextBox3
             // 
+            this.richTextBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.richTextBox3.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox3.ForeColor = System.Drawing.Color.Transparent;
             this.richTextBox3.Location = new System.Drawing.Point(290, 226);
             this.richTextBox3.Name = "richTextBox3";
             this.richTextBox3.Size = new System.Drawing.Size(392, 124);
             this.richTextBox3.TabIndex = 3;
-            this.richTextBox3.Text = "";
+            this.richTextBox3.Text = resources.GetString("richTextBox3.Text");
             // 
             // pictureBox2
             // 

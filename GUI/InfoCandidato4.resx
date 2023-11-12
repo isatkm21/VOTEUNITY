@@ -407,6 +407,20 @@
         RYI380j5VnydnOn2Lfsj51Aid5UIAVdaGB//2Q==
 </value>
   </data>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>                  Principales propuestas
+- Busca mejorar el acceso a servicios básicos como educación y salud para todo los ciudadanos, con el objetivo de reducir las brechas socioeconómicas en el país.
+
+- Propone la inversión en sectores como la agricultura, la energía renovable y el turismo, con el objetivo de disminuir la dependencia de Colombia de industrias extractivas, como el petréleo y la minería.
+
+- Tomar medidas para aumentar la trasnparencia, fortalecer la rendición de cuentas y fomentar la participación ciudadana en la toma de decisiones, con la intención de mejorar la ética gubernamental.</value>
+  </data>
+  <data name="richTextBox3.Text" xml:space="preserve">
+    <value>                  Datos curiosos
+- Antes de entrar a la política, Petro fue miembro del grupo guerrillero M-19 (Movimiento 19 de Abril). Participó en este grupo armado insurgente en la década de 1980. Sin embargo, con el proceso de paz de 1990, el M-19 se desmovilizó y Petro se integró en la vida política.
+- Ha expresado su apoyo al proceso de Paz en Colombia y a la implemnctación de los Acuerdos de Paz con las FARC (Fuerzas Armadas Revolucionarias de Colombia). Considera que la paz es esencial para el desarrollo sostenible del país.
+- Petro Ha estado involucrado en diversos enfrentamientos políticos a lo largo de su carrera, tanto con figuras políticas colombianas como con sectores empresariales. Su estilo directo y sus posiciones políticas han generado controversia y debates intensos.</value>
+  </data>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGoAAABACAYAAADyFuLHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
