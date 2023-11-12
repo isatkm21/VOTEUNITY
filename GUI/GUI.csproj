@@ -52,6 +52,24 @@
     <Compile Include="InfoCandidato.Designer.cs">
       <DependentUpon>InfoCandidato.cs</DependentUpon>
     </Compile>
+    <Compile Include="InfoCandidato2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoCandidato2.Designer.cs">
+      <DependentUpon>InfoCandidato2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoCandidato3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoCandidato3.Designer.cs">
+      <DependentUpon>InfoCandidato3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoCandidato4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoCandidato4.Designer.cs">
+      <DependentUpon>InfoCandidato4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Loguin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +92,15 @@
     </Compile>
     <EmbeddedResource Include="InfoCandidato.resx">
       <DependentUpon>InfoCandidato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoCandidato2.resx">
+      <DependentUpon>InfoCandidato2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoCandidato3.resx">
+      <DependentUpon>InfoCandidato3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoCandidato4.resx">
+      <DependentUpon>InfoCandidato4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Loguin.resx">
       <DependentUpon>Loguin.cs</DependentUpon>
