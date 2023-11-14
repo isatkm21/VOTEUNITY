@@ -102,11 +102,14 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.richTextBox1.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Bold);
+            this.richTextBox1.ForeColor = System.Drawing.Color.Transparent;
             this.richTextBox1.Location = new System.Drawing.Point(288, 5);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(483, 205);
             this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "Cambir por Rodolfo";
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // richTextBox2
             // 
