@@ -147,6 +147,7 @@
             this.Controls.Add(this.label2);
             this.Name = "InfoCandidato";
             this.Text = "InfoCandidato";
+            this.Load += new System.EventHandler(this.InfoCandidato_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

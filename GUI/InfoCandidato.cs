@@ -16,5 +16,10 @@ namespace GUI
         {
             InitializeComponent();
         }
+
+         void InfoCandidato_Load(object sender, EventArgs e)
+        {
+          
+        }
     }
 }
