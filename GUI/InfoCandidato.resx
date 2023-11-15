@@ -121,7 +121,7 @@
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAGoAAABACAYAAADyFuLHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAOY9JREFUeF61XAdYVVe2poOAIlixYC/YewU7iKJIR3rv2Om9SAcBezd2E2PsvSVq
+        wQAADsEBuJFr7QAAOY9JREFUeF61XAdYVVe2poOAIlixYC/YewU7iKJIR3rv2Om9SAcBezd2E2PsvSVq
         eozplkTTM0lmMpk3k7xMy6z3//vcg9gmmZk32295Lueee+7a+1997XONvBMjZUFMmNg4tM0wMjIyAf13
         h7FxrzFTJ33oHx8p82KDxSMuUGbF+4t7fIDMTQgST9Cc+ECZnRAobomBMiPOX2YnB8v0aH9ZkBwho6ZN
         umdsYjLQcLf/1nDoP3zIVR+sy/y4EHGPCVTfPythIXgJldmJC8U9Abwn4TX+5nm3WPAeHyLe8REyyWPG
@@ -1256,5 +1256,11 @@
 - Propone implementar medidas mas estrictas y efectivas para prevenir y castigar actos de corrupción a nivel gubernamental.
 - Prpone inversiones y reformas en el sector educativo para mejorar la calidad de la enseñanza y en el sector de la salud para garantizar un acceso más equitativo a servicios médicos de calidad.
 - Propone proyectos de construcción y modernización de carreteras, así como la implementación de sistemas de transporte público eficientes para abordar los desafíos de congestión vehicular en las ciudades.</value>
+  </data>
+  <data name="richTextBox3.Text" xml:space="preserve">
+    <value>               Datos curiosos
+- En 1972, fundó su constructora llamada "Constructora HG", basada en la construcción de viviendas. Se interesó en proyectos regionales destinados a impulsar el desarrollo urbano en determindas zonas nacionales, específicamente en Bucaramanga.
+- En 2015 financió su propia campaña y ganó la alcaldía de Bucaramanga. Lideró el movimiento Lógica, Ética y Estetica, el cual fue también el lema de su gobierno. En distintas ocasiones, reunió con líderes comunales y jóvenes. En dicha elección obtuvo algo mas de 77.000 votos.
+- Durante su paso por la alcaldía fue criticado por no cumplir con la promesa de campaña de construir 20 mil hogares para familias vulnerables. dijo que no pudo cumplir con el programa porque su antecesor no dejó dinero.</value>
   </data>
 </root>
