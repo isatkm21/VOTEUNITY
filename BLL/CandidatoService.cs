@@ -9,18 +9,18 @@ namespace BLL
 {
     public class CandidatoService
     {
-        private List<Candidato> candidatos;
+        public static List<Candidato> candidatos;
 
-        public CandidatoService() 
+        public  CandidatoService() 
         {
             candidatos = new List<Candidato>();
         }
-        public void RegistrarCandidato (Candidato candidato) 
+        public static void RegistrarCandidato (Candidato candidato) 
         {
             candidatos.Add(candidato);
         }
 
-        public List<Candidato> ObtenerCandidato()
+        public static List<Candidato> ObtenerCandidato()
         {
             return candidatos;
         }

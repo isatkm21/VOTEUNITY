@@ -37,6 +37,7 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -135,12 +136,22 @@
     "resario, Ingeniero civil y político\nUniversidad: Universidad Nacional de Colombi" +
     "a ";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(327, 460);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(170, 34);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // InfoCandidato
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 506);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox2);
@@ -165,5 +176,6 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.Button button1;
     }
 }

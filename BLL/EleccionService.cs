@@ -9,20 +9,20 @@ namespace BLL
 {
     public class EleccionService
     {
-        private List<Eleccion> elecciones;
+        public static List<Eleccion> elecciones;
 
-        public EleccionService() 
+        public  EleccionService() 
         {
             elecciones = new List<Eleccion>();
         }
 
-        public void CrearEleccion(Eleccion eleccion)
+        public static void CrearEleccion(Eleccion eleccion)
         {
             //Simular creacion basica de elecciones
             elecciones.Add(eleccion);
         }
 
-        public List<Eleccion> ObtenerElecciones() 
+        public static List<Eleccion> ObtenerElecciones() 
         {
             return elecciones;
         }

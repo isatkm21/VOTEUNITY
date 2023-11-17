@@ -9,7 +9,7 @@ namespace BLL
 {
         public class UsuarioService
         {
-            private List<Usuario> usuarios;
+            public static List<Usuario> usuarios;
 
             public UsuarioService()
             {
@@ -17,13 +17,13 @@ namespace BLL
 
             }
 
-            public bool AutenticarUsuario(string NombreUsuario, string Contraseña)
+            public static bool AutenticarUsuario(string NombreUsuario, string Contraseña)
             {
                 var usuario = usuarios.FirstOrDefault(u => u.NombreCompleto == NombreUsuario);
                 return usuario != null;
             }
 
-            public void RegistrarUsuario(Usuario usuario)
+            public static void RegistrarUsuario(Usuario usuario)
             {
                 //simular registro basico de usuario
                 usuarios.Add(usuario);

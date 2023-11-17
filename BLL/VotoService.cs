@@ -9,13 +9,13 @@ namespace BLL
 {
     public class VotoService
     {
-        private List<Voto> votos;
+        public static List<Voto> votos;
         public VotoService()
         {
             votos = new List<Voto>();
         }
 
-        public void EmitirVoto (Voto voto) 
+        public static void EmitirVoto (Voto voto) 
         {
             votos.Add(voto);
         }

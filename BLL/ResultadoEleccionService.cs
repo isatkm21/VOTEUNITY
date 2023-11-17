@@ -9,14 +9,14 @@ namespace BLL
 {
     public class ResultadoEleccionService
     {
-        private List<ResultadosElección> resultados;
-        public ResultadoEleccionService() 
+        public static List<ResultadosElección> resultados;
+        public  ResultadoEleccionService() 
         {
             resultados = new List<ResultadosElección>();
 
         }
 
-        public List<ResultadosElección> ObtenerResultadosPorEleccion(int IdEleccion)
+        public static List<ResultadosElección> ObtenerResultadosPorEleccion(int IdEleccion)
         {
             return resultados.Where(r=> r.IdEleccion == IdEleccion).ToList();
         }
