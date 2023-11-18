@@ -36,11 +36,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtNombres = new System.Windows.Forms.TextBox();
+            this.txtApellidos = new System.Windows.Forms.TextBox();
+            this.comboBoxId = new System.Windows.Forms.ComboBox();
+            this.txtDocumento = new System.Windows.Forms.TextBox();
+            this.btnResgistrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,53 +121,59 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Numero de documento";
             // 
-            // textBox1
+            // txtNombres
             // 
-            this.textBox1.BackColor = System.Drawing.Color.DarkGray;
-            this.textBox1.Location = new System.Drawing.Point(205, 160);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 20);
-            this.textBox1.TabIndex = 7;
+            this.txtNombres.BackColor = System.Drawing.Color.DarkGray;
+            this.txtNombres.Location = new System.Drawing.Point(205, 160);
+            this.txtNombres.Name = "txtNombres";
+            this.txtNombres.Size = new System.Drawing.Size(205, 20);
+            this.txtNombres.TabIndex = 7;
+            this.txtNombres.TextChanged += new System.EventHandler(this.txtNombres_TextChanged);
             // 
-            // textBox2
+            // txtApellidos
             // 
-            this.textBox2.BackColor = System.Drawing.Color.DarkGray;
-            this.textBox2.Location = new System.Drawing.Point(203, 215);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(205, 20);
-            this.textBox2.TabIndex = 8;
+            this.txtApellidos.BackColor = System.Drawing.Color.DarkGray;
+            this.txtApellidos.Location = new System.Drawing.Point(203, 215);
+            this.txtApellidos.Name = "txtApellidos";
+            this.txtApellidos.Size = new System.Drawing.Size(205, 20);
+            this.txtApellidos.TabIndex = 8;
+            this.txtApellidos.TextChanged += new System.EventHandler(this.txtApellidos_TextChanged);
             // 
-            // comboBox1
+            // comboBoxId
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.DarkGray;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxId.BackColor = System.Drawing.Color.DarkGray;
+            this.comboBoxId.FormattingEnabled = true;
+            this.comboBoxId.Items.AddRange(new object[] {
             "Cedula de Ciudadania",
             "Tarjeta de identidad"});
-            this.comboBox1.Location = new System.Drawing.Point(205, 284);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(205, 21);
-            this.comboBox1.TabIndex = 9;
+            this.comboBoxId.Location = new System.Drawing.Point(205, 284);
+            this.comboBoxId.Name = "comboBoxId";
+            this.comboBoxId.Size = new System.Drawing.Size(205, 21);
+            this.comboBoxId.TabIndex = 9;
+            this.comboBoxId.SelectedIndexChanged += new System.EventHandler(this.comboBoxId_SelectedIndexChanged);
             // 
-            // textBox3
+            // txtDocumento
             // 
-            this.textBox3.BackColor = System.Drawing.Color.DarkGray;
-            this.textBox3.Location = new System.Drawing.Point(203, 349);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(205, 20);
-            this.textBox3.TabIndex = 10;
+            this.txtDocumento.BackColor = System.Drawing.Color.DarkGray;
+            this.txtDocumento.Location = new System.Drawing.Point(203, 349);
+            this.txtDocumento.Name = "txtDocumento";
+            this.txtDocumento.Size = new System.Drawing.Size(205, 20);
+            this.txtDocumento.TabIndex = 10;
+            this.txtDocumento.TextChanged += new System.EventHandler(this.txtDocumento_TextChanged);
+            this.txtDocumento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDocumento_KeyPress);
             // 
-            // button1
+            // btnResgistrar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(245, 392);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 41);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Registrarse";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnResgistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnResgistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnResgistrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnResgistrar.Location = new System.Drawing.Point(245, 392);
+            this.btnResgistrar.Name = "btnResgistrar";
+            this.btnResgistrar.Size = new System.Drawing.Size(132, 41);
+            this.btnResgistrar.TabIndex = 11;
+            this.btnResgistrar.Text = "Registrarse";
+            this.btnResgistrar.UseVisualStyleBackColor = false;
+            this.btnResgistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // NuevoUsuario
             // 
@@ -175,11 +181,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(622, 462);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnResgistrar);
+            this.Controls.Add(this.txtDocumento);
+            this.Controls.Add(this.comboBoxId);
+            this.Controls.Add(this.txtApellidos);
+            this.Controls.Add(this.txtNombres);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -204,10 +210,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtNombres;
+        private System.Windows.Forms.TextBox txtApellidos;
+        private System.Windows.Forms.ComboBox comboBoxId;
+        private System.Windows.Forms.TextBox txtDocumento;
+        private System.Windows.Forms.Button btnResgistrar;
     }
 }

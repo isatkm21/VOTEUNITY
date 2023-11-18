@@ -10,6 +10,7 @@ namespace ENTITY
     {
         public int Id { get; set; }
         public string NombreCompleto { get; set; }
+        public string Apellidos { get; set; }
         public string Identificacion { get; set; }
         public bool EsCandidato { get; set; }
     }

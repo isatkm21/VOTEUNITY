@@ -19,7 +19,7 @@ namespace DAL
         }
         public class UsuarioRepository : IUsuarioRepository
         {
-            private string usuarioFilePath = "Usuario.txt";
+             string usuarioFilePath = "Usuario.txt";
 
             public void Guardar(Usuario usuario)
             {
@@ -28,6 +28,7 @@ namespace DAL
                     using (StreamWriter writer = new StreamWriter(usuarioFilePath, true))
                     {
                         string line = $"{usuario.Id},{usuario.NombreCompleto},{usuario.Identificacion},{usuario.EsCandidato}";
+                        writer.WriteLine(line);
                     }
                 }
                 else
