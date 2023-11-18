@@ -9,3 +9,9 @@ C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Segundo corte\VOTEUNITY\GUI\obj\
 C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Segundo corte\VOTEUNITY\GUI\obj\Debug\GUI.InfoCandidato2.resources
 C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Segundo corte\VOTEUNITY\GUI\obj\Debug\GUI.InfoCandidato3.resources
 C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Segundo corte\VOTEUNITY\GUI\obj\Debug\GUI.InfoCandidato4.resources
+C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Segundo corte\VOTEUNITY\GUI\bin\Debug\GUI.exe\GUI.exe.config
+C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Segundo corte\VOTEUNITY\GUI\bin\Debug\GUI.exe\GUI.xml
+C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Segundo corte\VOTEUNITY\GUI\bin\Debug\GUI.exe\GUI.exe
+C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Segundo corte\VOTEUNITY\GUI\bin\Debug\GUI.exe\GUI.pdb
+C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Segundo corte\VOTEUNITY\GUI\obj\Debug\GUI.exe
+C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Segundo corte\VOTEUNITY\GUI\obj\Debug\GUI.pdb

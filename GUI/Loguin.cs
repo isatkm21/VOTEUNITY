@@ -49,7 +49,23 @@ namespace GUI
            
         }
 
-      
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void btnRegistro_Click(object sender, EventArgs e)
+        {
+            NuevoUsuario nuevoUsuario = new NuevoUsuario();
+            nuevoUsuario.Show();
+
+            MessageBox.Show("Inicio de registro de nuevo usuario");
+
+        }
+
+        //private void button1_MouseClick(object sender, MouseEventArgs e)
+        //{
+
+        //}
     }
 }
