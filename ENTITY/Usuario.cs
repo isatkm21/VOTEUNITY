@@ -12,6 +12,6 @@ namespace ENTITY
         public string NombreCompleto { get; set; }
         public string Apellidos { get; set; }
         public string Identificacion { get; set; }
-        public bool EsCandidato { get; set; }
+        
     }
 }

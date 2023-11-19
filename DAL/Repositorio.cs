@@ -27,7 +27,7 @@ namespace DAL
                 {
                     using (StreamWriter writer = new StreamWriter(usuarioFilePath, true))
                     {
-                        string line = $"{usuario.Id},{usuario.NombreCompleto},{usuario.Identificacion},{usuario.EsCandidato}";
+                        string line = $"{usuario.Id},{usuario.NombreCompleto},{usuario.Identificacion}";
                         writer.WriteLine(line);
                     }
                 }
@@ -65,7 +65,7 @@ namespace DAL
                                     Id = Id,
                                     NombreCompleto = NombreCompleto,
                                     Identificacion = Identificacion,
-                                    EsCandidato = EsCandidato
+                                    
                                 };
                                 usuarios.Add(usuario);
                             }
@@ -73,6 +73,20 @@ namespace DAL
                     }
                 }
                 return usuarios;
+            }
+            private List<Usuario> usuarios = new List<Usuario>();
+
+            public int ObtenerProximoId()
+            {
+                if (usuarios.Count == 0)
+                {
+                    return 1;
+                }
+                else
+                {
+                    int maxId= usuarios.Max(u=> u.Id);
+                    return maxId + 1;
+                }
             }
         }
 

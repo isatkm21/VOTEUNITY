@@ -1,18 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GUI
 {
     public partial class NuevoUsuario : Form
     {
-        private UsuarioRepository repo;
+        public UsuarioRepository repo;
         public NuevoUsuario()
         {
             InitializeComponent();
@@ -25,14 +18,32 @@ namespace GUI
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             ///*Usuario*/ usuario = new Usuario();
+            try
+            {
+                Usuario nuevousuario = new Usuario
+                {
+                    Id = txtDocumento.Text,
+                    NombreCompleto = txtNombres.Text + " " + txtApellidos.Text,
+                    Apellidos = txtApellidos.Text,
+                    Identificacion = txtDocumento,
+                };
 
-            string Nombres = txtNombres.Text;
-            string Apellidos = txtApellidos.Text;
-            string Id = comboBoxId.SelectedItem.ToString();
-            string Documento = txtDocumento.Text;
+                UsuarioRepository repo = new UsuarioRepository();
+                repo.Guardar(nuevoUsuario);
+                DialogResult result = MessageBox.Show("Usuario almacenado correctamente. ¿Desea volver al inicio de sesión?", "Éxito", MessageBoxButtons.OKCancel);
 
-            string mensaje = $"Nombre: {Nombres}\nApellido: {Apellidos}\nId: {Id}\nDocumento: {Documento} ha sido registrado.";
-            MessageBox.Show(mensaje);
+                if (result == DialogResult.OK) 
+                {
+                    Loguin loguin= new Loguin();
+                    loguin.Show();
+                    this.Hide();
+                }
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show($"Error al guardar el usuario. ");
+            }
+            
         }
 
         private void txtApellidos_TextChanged(object sender, EventArgs e)
