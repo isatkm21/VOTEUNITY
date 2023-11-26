@@ -1,2 +1,0 @@
-C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Segundo corte\VOTEUNITY\ENTITY\obj\Debug\ENTITY.csproj.AssemblyReference.cache
-C:\Users\ISABELLA MANJARRES\OneDrive\Escritorio\Segundo corte\VOTEUNITY\ENTITY\obj\Debug\ENTITY.csproj.CoreCompileInputs.cache

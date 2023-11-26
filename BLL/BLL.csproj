@@ -59,7 +59,7 @@
       <Name>DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\ENTITY\ENTITY.csproj">
-      <Project>{1F68C135-58FC-4EEB-B1A7-0E0665B041BA}</Project>
+      <Project>{1f68c135-58fc-4eeb-b1a7-0e0665b041ba}</Project>
       <Name>ENTITY</Name>
     </ProjectReference>
   </ItemGroup>

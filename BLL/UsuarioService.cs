@@ -1,6 +1,7 @@
 ﻿using ENTITY;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ namespace BLL
 {
         public class UsuarioService
         {
+            
             public static List<Usuario> usuarios;
 
             public UsuarioService()
@@ -25,8 +27,21 @@ namespace BLL
 
             public static void RegistrarUsuario(Usuario usuario)
             {
-                //simular registro basico de usuario
-                usuarios.Add(usuario);
+            //simular registro basico de usuario
+                try 
+                {
+                    using (StreamWriter writer = new StreamWriter("Archivo.txt", true))
+                    {
+                    string usuariostring = $"{usuario.Id},{usuario.NombreCompleto},{usuario.Apellidos},{usuario.Identificacion}";
+                    writer.WriteLine();
+                    }
+                    
+                }
+                catch (Exception ex)
+                {
+                    
+                }
+            
 
             }
 
